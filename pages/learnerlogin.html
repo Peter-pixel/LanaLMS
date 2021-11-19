@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Lana/learner</title>
+<meta charset="utf-8">
+<link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body id="top">
+
+<div class="wrapper row1">
+  <header id="header" class="clear"> 
+  
+    <div id="logo" class="fl_left">
+      <h1><a href="../index.html">Lana</a></h1>
+    </div>
+    <nav id="mainav" class="fl_right">
+        <ul class="clear">
+            <li class="active"><a href="../index.html">Home</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+               <li><a href="contactus.html">Contact us</a></li>
+               <a href="login.html">LOGIN<i class="icon-chevron-right"></i></a>
+          </ul>
+    </nav>
+   
+  </header>
+</div>
+
+    
+    
+<style>
+    /* Bordered form */
+form {
+  border: 3px solid #f1f1f1
+ 
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+  width: 10%;
+  border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+</style>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.4.1/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyAeD1qZcxZK6UmISzemXmm5rLRVH1ZG6E4",
+      authDomain: "lanalms-f7308.firebaseapp.com",
+      projectId: "lanalms-f7308",
+      storageBucket: "lanalms-f7308.appspot.com",
+      messagingSenderId: "456939382567",
+      appId: "1:456939382567:web:f52c23973d940e775a6b02",
+      measurementId: "G-D0QXFWD1PV"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+
+
+<div class="wrapper row3">
+  <main id="container" class="clear"> 
+    <div class="center push30">
+        <h1 class="shout">Learner Login</h1>
+    </div>
+    <form style=" margin-left: 200px; width: 60%;"action="#" method="post">
+        <div class="imgcontainer">
+          <img src="../images/demo/loginavatar.png" alt="Avatar" class="avatar">
+        </div>
+      
+        <div class="container">
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Registration Number" name="psw" required>
+      
+          <button type="submit"style=" background-color: #04aa36; color: white; padding: 14px 20px; margin: 8px 0; border: none; cursor: pointer; width: 100%;">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+      
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+   
+       <div class="clear"></div>
+  </main>
+</div>
+
+<div class="wrapper row4">
+    <footer id="footer" class="clear"> 
+      
+      <div class="one_half first">
+        <h6 class="title">The future is now</h6>
+        <img class="imgl pad5 borderedbox" style="height: 100px; width: 100px;" src="../images/demo/gallery/student.png" alt="Student">
+        <p>A journey of  thousand miles starts with one step. Lana will revolutionalize e-learning and bring
+          you the best in this field yet.
+        </p>
+        
+      </div>
+      <div class="one_quarter">
+        <h6 class="title">Contact us</h6>
+        <address class="push30">
+        Trend Ent<br>
+        250, 90119<br>
+        Matuu<br>
+             </address>
+        <ul class="nospace">
+          <li class="push10"><i class="icon-time"></i> Mon. - Fri. 9:00am - 7:00pm</li>
+          <li class="push10"><i class="icon-phone"></i> +254 797798449</li>
+          <li><i class="icon-envelope-alt"></i> lanalms.com</li>
+        </ul>
+      </div>
+      <div class="one_quarter">
+        <h6 class="title">Subscribe to our newsletter</h6>
+        <p>Get updates on any changes that are made on this platform realtime.</p>
+        <form action="#" method="post">
+          <label for="nlt_email">Mail <span>*</span></label>
+          <input class="push15" type="text" name="nlt_email" id="nlt_email" value="" size="22">
+          <button class="badge bold uppercase" type="submit" value="Subscribe">Subscribe <i class="icon-chevron-right"></i></button>
+        </form>
+      </div>
+      
+    </footer>
+  </div>
+
+<div class="wrapper row5">
+  <div id="copyright" class="clear"> 
+    
+  </div>
+</div>
+</body>
+</html>
