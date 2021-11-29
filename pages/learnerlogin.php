@@ -1,3 +1,4 @@
+<?php include("connect.php") ?>
 <!DOCTYPE html>
 
 <html>
@@ -17,7 +18,7 @@
     <nav id="mainav" class="fl_right">
         <ul class="clear">
             <li class="active"><a href="../index.html">Home</a></li>
-                <li><a href="news.html">News</a></li>
+                <li><a href="news.php">News</a></li>
                 <li><a href="aboutus.html">About us</a></li>
                <li><a href="contactus.html">Contact us</a></li>
                <a href="login.html">LOGIN<i class="icon-chevron-right"></i></a>
@@ -103,29 +104,6 @@ span.psw {
   }
 }
 </style>
-<script type="module">
-    // Import the functions you need from the SDKs you need
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.1/firebase-app.js";
-    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.4.1/firebase-analytics.js";
-    // TODO: Add SDKs for Firebase products that you want to use
-    // https://firebase.google.com/docs/web/setup#available-libraries
-  
-    // Your web app's Firebase configuration
-    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-    const firebaseConfig = {
-      apiKey: "AIzaSyAeD1qZcxZK6UmISzemXmm5rLRVH1ZG6E4",
-      authDomain: "lanalms-f7308.firebaseapp.com",
-      projectId: "lanalms-f7308",
-      storageBucket: "lanalms-f7308.appspot.com",
-      messagingSenderId: "456939382567",
-      appId: "1:456939382567:web:f52c23973d940e775a6b02",
-      measurementId: "G-D0QXFWD1PV"
-    };
-  
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    const analytics = getAnalytics(app);
-  </script>
 
 
 <div class="wrapper row3">
@@ -133,14 +111,14 @@ span.psw {
     <div class="center push30">
         <h1 class="shout">Learner Login</h1>
     </div>
-    <form style=" margin-left: 200px; width: 60%;"action="#" method="post">
+    <form style=" margin-left: 200px; width: 60%;"action="learnerlogin_action.php" method="post">
         <div class="imgcontainer">
           <img src="../images/demo/loginavatar.png" alt="Avatar" class="avatar">
         </div>
       
         <div class="container">
-            <label for="email"><b>Email</b></label>
-            <input type="text" placeholder="Enter Email" name="email" required>
+            <label for="name"><b>Name</b></label>
+            <input type="text" placeholder="Enter Email" name="name" required>
       
           <label for="psw"><b>Password</b></label>
           <input type="password" placeholder="Enter Registration Number" name="psw" required>

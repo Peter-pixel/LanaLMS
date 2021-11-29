@@ -1,51 +1,88 @@
+<?php
+      include "session_timeout.php";
+?>
 <!DOCTYPE html>
-
 <html>
 <head>
-<title>Lana/news</title>
+<title>Lana | Pages | Full Width</title>
 <meta charset="utf-8">
 <link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+
 </head>
 <body id="top">
 
 <div class="wrapper row1">
   <header id="header" class="clear"> 
-  
+   
     <div id="logo" class="fl_left">
       <h1><a href="../index.html">Lana</a></h1>
     </div>
     <nav id="mainav" class="fl_right">
-        <ul class="clear">
-            <li class="active"><a href="../index.html">Home</a></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="aboutus.html">About us</a></li>
-               <li><a href="contactus.html">Contact us</a></li>
-               <a class="badge uppercase" href="login.html">LOGIN<i class="icon-chevron-right"></i></a>
-          </ul>
+      <ul class="clear">
+        <li class="active"><a href="../index.html">Home</a></li>
+            <li><a href="news.php">News</a></li>
+            <li><a href="aboutus.html">About us</a></li>
+           <li><a href="contactus.html">Contact us</a></li>
+           <li><a href="forum.html">Forum</a></li>
+      </ul>
     </nav>
    
   </header>
 </div>
 
+<div class="wrapper row2">
+  <div id="breadcrumb"> 
+  
+    <ul>
+      <li><a href="adminhome.html">Home</a></li>
+      <li><a href="postnews.php">News</a></li>
+      
+    </ul>
+   
+  </div>
+</div>
 
 <div class="wrapper row3">
   <main id="container" class="clear"> 
-   
-    <div class="center push80">
-      <h1 class="shout">The future is now</h1>
-      <p class="push30">
-Lana is here to make your life easier.
-Lana is a top notch learning manangement system with the best UI there is. <br>
-and very organized content for both learners and instructors.</p>
-      <p class="nospace"><a class="badge uppercase" href="login.html">Login<i class="icon-chevron-right"></i></a> 
-      	<!--<a class="badge uppercase" href="#">Instructor<i class="icon-chevron-right"></i></a></p> -->
-    </div>
+    
+    <form class="news_form" action="post_news_action.php" method="post">
+        <div class="flex-container">
+            <div class=container>
+                <label>News Headline :</label><br>
+                <input name="headline" size="50" type="text" required />
+            </div>
+        </div>
+
+        <div class="flex-container">
+            <div class=container>
+                <label>Details :</label><br>
+                <textarea name="news_details" style="height: 200px; width: 60vw;" required /></textarea>
+            </div>
+        </div>
+
+        <div class="flex-container">
+            <div class="container">
+                <button style=" background-color: #04aa36;color: white;padding: 14px 20px;margin: 8px 0;border: none;cursor: pointer;width: 50%;"type="submit">Submit</button>
+            </div>
+
+            <div class="container">
+                <button style=" background-color: #04aa36;color: white;padding: 14px 20px;margin: 8px 0;border: none;cursor: pointer;width: 50%;"type="reset" class="reset" onclick="return confirmReset();">Reset</button>
+            </div>
+        </div>
+
+    </form><br><br>
+
+    <script>
+    function confirmReset() {
+        return confirm('Do you really want to reset?')
+    }
+    </script>
+   </div>
    
        <div class="clear"></div>
   </main>
-</div>
 
-<div class="wrapper row4">
+    <div class="wrapper row4">
   <footer id="footer" class="clear"> 
     
     <div class="one_half first">
@@ -81,12 +118,11 @@ and very organized content for both learners and instructors.</p>
     
   </footer>
 </div>
-    
-  </footer>
-</div>
 
 <div class="wrapper row5">
   <div id="copyright" class="clear"> 
+    
+    <p class="fl_left">Copyright &copy; 2018 - All Rights Reserved - <a href="#">Lana.com</a></p>
     
   </div>
 </div>

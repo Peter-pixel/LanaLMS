@@ -17,7 +17,7 @@
     <nav id="mainav" class="fl_right">
       <ul class="clear">
         <li class="active"><a href="../index.html">Home</a></li>
-            <li><a href="news.html">News</a></li>
+            <li><a href="news.php">News</a></li>
             <li><a href="forum.html">Forum</a></li>
             <li><a href="aboutus.html">About us</a></li>
            <li><a href="contactus.html">Contact us</a></li>
@@ -32,7 +32,6 @@
   <div id="breadcrumb"> 
    
     <ul>
-      <li><a href="#">Home</a></li>
       <li><a href="#">Admin Home</a></li>
     </ul>
   
@@ -47,15 +46,15 @@
       <h6></h6>
       <nav class="sdb_holder">
         <ul>
-          <li><a href="#">Resister Student</a></li>
-          <li><a href="#">Register Instructor</a></li>
-          <li><a href="#">Create Course</a>
+          <li><a href="registerlearner.php">Resister Student</a></li>
+          <li><a href="registerinstructor.php">Register Instructor</a></li>
+          <li><a href="createcourse.php">Create Course</a>
             <ul>
-              <li><a href="#">Register Units</a></li>
+              <li><a href="registerunits.php">Register Units</a></li>
                             </li>
             </ul>
           </li>
-          <li><a href="#">Post News</a></li>
+          <li><a href="postnews.php">Post News</a></li>
         </ul>
       </nav>
       <div class="sdb_holder">
@@ -73,14 +72,24 @@
     </div>
  
     <div id="content" class="three_quarter"> 
-            <h1>We are the future</h1>
-      <img class="imgr borderedbox pad5" src="../images/demo/imgr.gif" alt="">
-      <p>Aliquatjusto quisque nam consequat doloreet vest orna partur scetur portortis nam. Metadipiscing eget facilis elit sagittis felisi eger id justo maurisus convallicitur.</p>
-      <p>Dapiensociis <a href="#">temper donec auctortortis cumsan</a> et curabitur condis lorem loborttis leo. Ipsumcommodo libero nunc at in velis tincidunt pellentum tincidunt vel lorem.</p>
-      <img class="imgl borderedbox pad5" src="../images/demo/imgl.gif" alt="">
-      <p>This is a W3C compliant free website template from <a href="https://www.os-templates.com/" title="Free Website Templates">OS Templates</a>. For full terms of use of this template please read our <a href="https://www.os-templates.com/template-terms">website template licence</a>.</p>
-      <p>You can use and modify the template for both personal and commercial use. You must keep all copyright information and credit links in the template and associated files. For more website templates visit <a href="https://www.os-templates.com/">free website templates</a>.</p>
-      <p>Portortornec condimenterdum eget consectetuer condis consequam pretium pellus sed mauris enim. Puruselit mauris nulla hendimentesque elit semper nam a sapien urna sempus.</p>
+            <h1>Register a new adminstrator</h1><br>
+            <form style=" margin-left: 200px; width: 60%;"action="registeradmin_action.php" method="post">
+      
+        <div class="container">
+            <label for="name"><b>Name</b></label>
+            <input type="text" placeholder="Name" name="name" required>
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Email" name="email" required>
+            <label for="password"><b>Password</b></label>
+            <input type="text" placeholder="Password" name="password" required>
+            
+      
+          <button type="submit"style=" background-color: #04aa36; color: white; padding: 14px 20px; margin: 8px 0; border: none; cursor: pointer; width: 100%;">Register</button>
+          
+        </div>
+    
+      </form>
+      
 
      
       
