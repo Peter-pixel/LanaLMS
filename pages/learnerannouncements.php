@@ -1,3 +1,10 @@
+<?php 
+    include "connect.php";
+
+    include "learnermenubar.php";
+
+?>
+
 <!DOCTYPE html>
 
 <html>
@@ -5,24 +12,11 @@
 <title>Lana/news</title>
 <meta charset="utf-8">
 <link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+<link href="news_style.css" rel="stylesheet" type="text/css" media="all">
+<link href="search.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body id="top">
-
-<div class="wrapper row1">
-  <header id="header" class="clear"> 
-  
-    <div id="logo" class="fl_left">
-      <h1><a href="../index.html">Lana</a></h1>
-    </div>
-    <nav id="mainav" class="fl_right">
-        <ul class="clear">
-            <li class="active"><a href="../index.html">Home</a></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="aboutus.html">About us</a></li>
-               <li><a href="contactus.html">Contact us</a></li>
-               <a class="badge uppercase" href="login.html">LOGIN<i class="icon-chevron-right"></i></a>
-          </ul>
-    </nav>
+<body style="background-color: #0B1041;" id="top">
    
   </header>
 </div>
@@ -32,13 +26,37 @@
   <main id="container" class="clear"> 
    
     <div class="center push80">
-      <h1 class="shout">The future is now</h1>
-      <p class="push30">
-Lana is here to make your life easier.
-Lana is a top notch learning manangement system with the best UI there is. <br>
-and very organized content for both learners and instructors.</p>
-      <p class="nospace"><a class="badge uppercase" href="login.html">Login<i class="icon-chevron-right"></i></a> 
-      	<!--<a class="badge uppercase" href="#">Instructor<i class="icon-chevron-right"></i></a></p> -->
+       <?php
+            $sql0 = "SELECT id, title, created FROM news ORDER BY created DESC";
+            $result = $conn->query($sql0);
+
+            if ($result->num_rows > 0) {
+            // output data of each row
+            while($row = $result->fetch_assoc()) {
+                $id = $row["id"];
+                $sql1 = "SELECT body FROM news_body WHERE id=$id";
+                $result1 = $conn->query($sql1); ?>
+
+                <div class="flex-item">
+                    <div class="flex-container-title">
+                        <h1 id="title"><?php echo $row["title"] . "<br>"; ?></h1>
+                    </div>
+                    <div class="flex-container-title">
+                        <p id="date"><?php echo "Date : " .
+                            date("d/m/Y", strtotime($row["created"])); ?></p>
+                    </div>
+                    <div class="flex-container-body">
+                        <p id="news_body"><?php while($row1 = $result1->fetch_assoc()) {
+                            echo $row1["body"]; } ?></p>
+                    </div>
+                </div>
+
+            <?php }
+            } else {
+                echo "No news available ! Please post some.";
+            }
+            $conn->close();
+        ?>
     </div>
    
        <div class="clear"></div>

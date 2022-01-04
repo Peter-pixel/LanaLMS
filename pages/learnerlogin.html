@@ -125,6 +125,10 @@ span.psw {
     // Initialize Firebase
     const app = initializeApp(firebaseConfig);
     const analytics = getAnalytics(app);
+    function login()
+    {
+
+    }
   </script>
 
 
@@ -140,12 +144,12 @@ span.psw {
       
         <div class="container">
             <label for="email"><b>Email</b></label>
-            <input type="text" placeholder="Enter Email" name="email" required>
+            <input type="text" placeholder="Enter Email" id="email" required>
       
           <label for="psw"><b>Password</b></label>
-          <input type="password" placeholder="Enter Registration Number" name="psw" required>
+          <input type="password" placeholder="Enter Registration Number" id="psw" required>
       
-          <button type="submit"style=" background-color: #04aa36; color: white; padding: 14px 20px; margin: 8px 0; border: none; cursor: pointer; width: 100%;">Login</button>
+          <button type="submit"style=" background-color: #04aa36; color: white; padding: 14px 20px; margin: 8px 0; border: none; cursor: pointer; width: 100%;" onclick="login()">Login</button>
           <label>
             <input type="checkbox" checked="checked" name="remember"> Remember me
           </label>

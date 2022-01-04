@@ -3,6 +3,7 @@
 
 @import url("fontawesome-3.2.1.min.css");
 @import url("framework.css");
+@import url("custom.flexslider.css");
 
 
 /* Rows
@@ -20,7 +21,7 @@
 
 #logo{}
 #logo h1{margin:0; padding:0; font-size:52px; font-variant:small-caps;}
-
+.fl_right, .imgr{float:right;}
 
 /* Content Area
 ---------------------------------------------------------------------------------------------------------------*/
@@ -191,3 +192,58 @@ th{color:#FFFFFF; background-color:#373737;}
 tr, #comments li, *[type="submit"], *[type="reset"]{color:inherit; background-color:#FBFBFB;}
 tr:nth-child(even), #comments li:nth-child(even){color:inherit; background-color:#F7F7F7;}
 table a, #comments a{background-color:inherit;}
+
+/* Media Queries
+--------------------------------------------------------------------------------------------------------------- */
+@-ms-viewport{width:device-width;}
+
+
+/* Smartphone + Tablet
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (min-width:180px) and (max-width:750px) {
+	.imgl, .imgr{display:inline-block; float:none; margin:0 0 10px 0;}
+	.fl_left, .fl_right{display:block; float:none;}
+	.one_half, .one_third, .two_third, .one_quarter, .two_quarter, .three_quarter{display:block; float:none; width:auto; margin:0 0 30px 0; padding:0;}
+
+	#topbar, #header{text-align:center;}
+}
+
+@media screen and (min-width:180px) and (max-width:900px) {
+	#topbar, #header, #breadcrumb, .container, #footer, #copyright{max-width:95%;}
+
+	#topbar{padding:0 0 10px;}
+	#topbar ul{margin-top:10px;}
+
+	#header{padding:12px 0;}
+	#header #logo h1{margin:0;}
+
+	#mainav{margin-top:6px;}
+	#mainav ul{display:none;}
+	#mainav form{display:block;}
+
+	#breadcrumb{}
+
+	.container{}
+	#comments input[type="reset"]{margin-top:10px;}
+	.pagination li{display:inline-block; margin:0 5px 5px 0;}
+
+	#footer{padding-bottom:20px;}
+
+	#copyright{}
+	#copyright p:first-of-type{margin-bottom:10px;}
+}
+
+
+/* Max Wrapper Width - Laptop, Desktop etc.
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (min-width:978px) {
+	#topbar, #header, #breadcrumb, .container, #footer, #copyright{max-width:978px;}
+}
+
+
+/* Other
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width:650px) {
+	.scrollable{display:block; width:100%; margin:0 0 30px 0; padding:0 0 15px 0; overflow:auto; overflow-x:scroll;}
+	.scrollable table{margin:0; padding:0; white-space:nowrap;}
+}

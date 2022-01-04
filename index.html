@@ -1,117 +1,326 @@
 <!DOCTYPE html>
 
 <html>
+
 <head>
-<title>Lana/Landing_page</title>
-<meta charset="utf-8">
-<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+    <title>Lana/Landing_page</title>
+    <meta charset="utf-8">
+    <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+    <link href="pages/search.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="style.scss" rel="stylesheet" type="text/css" media="all">
+    <style>
+        .shout {
+            color: whitesmoke;
+            position: relative;
+            animation-name: example;
+            animation-duration: 6s;
+            animation-delay: -4s;
+            animation-iteration-count: infinite;
+        }
+        
+        .push30 {
+            color: whitesmoke;
+            position: relative;
+            animation-name: example1;
+            animation-duration: 6s;
+            animation-delay: -4s;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes example {
+            0% {
+                color: white;
+                font-size: 30px;
+                left: 0px;
+                top: 0px;
+            }
+            25% {
+                color: green;
+                left: 10px;
+                top: 0px;
+            }
+            50% {
+                color: white;
+                left: 10px;
+                top: 10px;
+            }
+            75% {
+                color: green;
+                left: 0px;
+                top: 10px;
+            }
+            100% {
+                color: white;
+                left: 0px;
+                top: 0px;
+            }
+        }
+        
+        @keyframes example1 {
+            0% {
+                color: white;
+                left: 0px;
+                top: 0px;
+            }
+            25% {
+                color: white;
+                left: 0px;
+                top: 10px;
+            }
+            50% {
+                color: white;
+                left: 10px;
+                top: 10px;
+            }
+            75% {
+                color: white;
+                left: 10px;
+                top: 0px;
+            }
+            100% {
+                color: white;
+                left: 0px;
+                top: 0px;
+            }
+        }
+    </style>
+
 </head>
-<body id="top">
-<div class="wrapper row1">
-  <header id="header" class="clear"> 
-  
-    <div id="logo" class="fl_left">
-      <h1><a href="index.html">Lana</a></h1>
+
+<body id="top" style=" background-image:url(images/demo/study.png); background-size: 250px; background-repeat: no-repeat;background-position-y: 200px; background-position-x: right;">
+
+    <div class="center" id="3d" style=" position: absolute;
+    margin-left: 600px;
+    margin-top: 270px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        perspective: 900px;
+        perspective-origin: center calc(50%  100px);
+        ">
+        <div class="rise">
+            <div class="step">
+                <div class="top"></div>
+                <div class="bottom"></div>
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+            <div class="step">
+                <div class="top"></div>
+                <div class="bottom"></div>
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+            <div class="step">
+                <div class="top"></div>
+                <div class="bottom"></div>
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+            <div class="step">
+                <div class="top"></div>
+                <div class="bottom"></div>
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+            <div class="step">
+                <div class="top"></div>
+                <div class="bottom"></div>
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+            <div class="step">
+                <div class="top"></div>
+                <div class="bottom"></div>
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+            <div class="step">
+                <div class="top"></div>
+                <div class="bottom"></div>
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+            <div class="step">
+                <div class="top"></div>
+                <div class="bottom"></div>
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+            <div class="step">
+                <div class="top"></div>
+                <div class="bottom"></div>
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+            <div class="step">
+                <div class="top"></div>
+                <div class="bottom"></div>
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+            <div class="step">
+                <div class="top"></div>
+                <div class="bottom"></div>
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+            <div class="step">
+                <div class="top"></div>
+                <div class="bottom"></div>
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+            <div class="step">
+                <div class="top"></div>
+                <div class="bottom"></div>
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+            <div class="step">
+                <div class="top"></div>
+                <div class="bottom"></div>
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+            <div class="step">
+                <div class="top"></div>
+                <div class="bottom"></div>
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+            <div class="step">
+                <div class="top"></div>
+                <div class="bottom"></div>
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+            <div class="step">
+                <div class="top"></div>
+                <div class="bottom"></div>
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+            <div class="step">
+                <div class="top"></div>
+                <div class="bottom"></div>
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+            <div class="step">
+                <div class="top"></div>
+                <div class="bottom"></div>
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+            <div class="step">
+                <div class="top"></div>
+                <div class="bottom"></div>
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+
+            <div class="ball"></div>
+        </div>
     </div>
-    <nav id="mainav" class="fl_right">
-      <ul class="clear">
-        <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="pages/news.html">News</a></li>
-            <li><a href="pages/aboutus.html">About us</a></li>
-           <li><a href="pages/contactus.html">Contact us</a></li>
-           <a class="badge uppercase" href="./pages/login.html">LOGIN<i class="icon-chevron-right"></i></a>
-      </ul>
-    </nav>
-   
-  </header>
-</div>
+
+    <div class="wrapper row1">
+        <header id="header" class="clear">
+
+            <div id="logo" class="fl_left">
+                <h1><a href="index.html">Lana</a></h1>
+            </div>
+            <nav id="mainav" class="fl_right">
+                <ul class="clear">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="pages/news.php">News</a></li>
+                    <li><a href="pages/aboutus.php">About us</a></li>
+                    <li><a href="pages/contactus.php">Contact us</a></li>
+
+                </ul>
+            </nav>
+
+        </header>
+    </div>
+    <main style="background-image:url(images/demo/question.png); background-size: 100px; background-repeat: no-repeat;" id="container" class="clear">
+
+        <div class="center push80">
+            <h1 class="shout">Revolutionalizing e-learning</h1><br><br>
+            <p class="push30">
+                Lana is here to make your life easier.<br> Lana is a top notch learning manangement system with the best user experience <br> and very organized content for both learners and instructors.</p>
+            <p class="nospace"><a style="background-color: green;color: white;" class="badge uppercase" href="./pages/login.html">LOGIN<i class="icon-chevron-right"></i></a>
+                <!--<a class="badge uppercase" href="#">Instructor<i class="icon-chevron-right"></i></a></p> -->
+        </div>
+        <div class="clear center">
+            <div class="one_third first">
+                <div class="pad30 borderedbox hovered"><i class="icon-bullseye icon-5x"></i>
+                    <p>E-learning has gained a lot of popularity in the recent past and most students are still getting the hang of it despite it being around for long. Most University students attended face-to-face classes and are very new to this. We would
+                        like to make their experience with it as frictionless as possible.</p>
+                    <p class="nospace"><a class="badge uppercase" href="pages/aboutus.php">Read More <i class="icon-chevron-right"></i></a></p>
+                </div>
+            </div>
+            <div class="one_third">
+                <div class="pad30 borderedbox hovered"><i class="icon-flag-checkered icon-5x"></i>
+                    <p>We are providing a dedicated communication channel for students and lecturers to help grow their interest to learn and teach. A forum for the students and instructors to colaborate and communicate important matters. Communication is
+                        key in any healthy learning environment.
+                    </p>
+                    <p class="nospace"><a class="badge uppercase" href="pages/aboutus.php">Read More <i class="icon-chevron-right"></i></a></p>
+                </div>
+            </div>
+            <div class="one_third">
+                <div class="pad30 borderedbox hovered"><i class="icon-briefcase icon-5x"></i>
+                    <p>For e-learning platforms, data driven design is hugely important but we must balance this with delight. Creative flare mustn’t be forgotten and the user’s emotional response to a product or a service is just as important as what the
+                        service is able to deliver, information wise.
+                    </p>
+                    <p class="nospace"><a class="badge uppercase" href="pages/aboutus.php">Read More <i class="icon-chevron-right"></i></a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="clear"></div>
+    </main>
 
 
-<div class="wrapper row3"> 
-  <main id="container" class="clear"> 
-    <div class="center push80">
-      <h1 class="shout">Revolutionalizing e-learning</h1>
-      <p class="push30">
-Lana is here to make your life easier.<br>
-Lana is a top notch learning manangement system with the best user experience <br>
-and very organized content for both learners and instructors.</p>
-      <p class="nospace"><a class="badge uppercase" href="./pages/login.html">LOGIN<i class="icon-chevron-right"></i></a> 
-      	<!--<a class="badge uppercase" href="#">Instructor<i class="icon-chevron-right"></i></a></p> -->
-    </div>
-    <div class="clear center">
-      <div class="one_third first">
-        <div class="pad30 borderedbox hovered"><i class="icon-bullseye icon-5x"></i>
-          <p>E-learning has gained a lot of popularity in the recent past and most students are still getting the 
-            hang of it despite it being around for long. Most University students attended face-to-face classes and 
-            are very new to this. We would like to make their experience with it as frictionless as possible.</p>
-          <p class="nospace"><a class="badge uppercase" href="#">Read More <i class="icon-chevron-right"></i></a></p>
-        </div>
-      </div>
-      <div class="one_third">
-        <div class="pad30 borderedbox hovered"><i class="icon-flag-checkered icon-5x"></i>
-          <p>We are providing a dedicated communication channel for students and lecturers to
-            help grow their interest to learn and teach. A forum for the students and instructors to colaborate
-             and communicate important matters. Communication is key in any healthy learning environment.
-          </p>
-          <p class="nospace"><a class="badge uppercase" href="#">Read More <i class="icon-chevron-right"></i></a></p>
-        </div>
-      </div>
-      <div class="one_third">
-        <div class="pad30 borderedbox hovered"><i class="icon-briefcase icon-5x"></i>
-          <p>For e-learning platforms, data driven design is hugely important but we must balance this with 
-            delight. Creative flare mustn’t be forgotten and the user’s emotional response to a product or a 
-            service is just as important as what the service is able to deliver, information wise.
-          </p>
-          <p class="nospace"><a class="badge uppercase" href="#">Read More <i class="icon-chevron-right"></i></a></p>
-        </div>
-      </div>
-    </div>
-    
-    <div class="clear"></div>
-  </main>
-</div>
 
-<div class="wrapper row4">
-  <footer id="footer" class="clear"> 
-    
-    <div class="one_half first">
-      <h6 class="title">The future is now</h6>
-      <img class="imgl pad5 borderedbox" style="height: 100px; width: 100px;" src="images/demo/gallery/student.png" alt="Student">
-      <p>A journey of  thousand miles starts with one step. Lana will revolutionalize e-learning and bring
-        you the best in this field yet.
-      </p>
-      
-    </div>
-    <div class="one_quarter">
-      <h6 class="title">Contact us</h6>
-      <address class="push30">
+    <footer id="footer" class="clear">
+
+        <div class="one_half first">
+            <h6 class="title">The future is now</h6>
+            <img class="imgl pad5 borderedbox" style="height: 100px; width: 100px;" src="images/demo/gallery/student.png" alt="Student">
+            <p>A journey of thousand miles starts with one step. Lana will revolutionalize e-learning and bring you the best in this field yet.
+            </p>
+
+        </div>
+        <div class="one_quarter">
+            <h6 class="title">Contact us</h6>
+            <address class="push30">
       Trend Ent<br>
       250, 90119<br>
       Matuu<br>
            </address>
-      <ul class="nospace">
-        <li class="push10"><i class="icon-time"></i> Mon. - Fri. 9:00am - 7:00pm</li>
-        <li class="push10"><i class="icon-phone"></i> +254 797798449</li>
-        <li><i class="icon-envelope-alt"></i> lanalms.com</li>
-      </ul>
-    </div>
-    <div class="one_quarter">
-      <h6 class="title">Subscribe to our newsletter</h6>
-      <p>Get updates on any changes that are made on this platform realtime.</p>
-      <form action="#" method="post">
-        <label for="nlt_email">Mail <span>*</span></label>
-        <input class="push15" type="text" name="nlt_email" id="nlt_email" value="" size="22">
-        <button class="badge bold uppercase" type="submit" value="Subscribe">Subscribe <i class="icon-chevron-right"></i></button>
-      </form>
-    </div>
-    
-  </footer>
-</div>
+            <ul class="nospace">
+                <li class="push10"><i class="icon-time"></i> Mon. - Fri. 9:00am - 7:00pm</li>
+                <li class="push10"><i class="icon-phone"></i> +254 797798449</li>
+                <li><i class="icon-envelope-alt"></i> lanalms.com</li>
+            </ul>
+        </div>
+        <div class="one_quarter">
+            <h6 class="title">Welcome to Lana</h6>
+            <audio controls autoplay>
+        <source src="audio/Lana.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
+        </div>
 
-<div class="wrapper row5">
-  <div id="copyright" class="clear"> 
-    
-  </div>
-</div>
+    </footer>
+
+
+    <div class="wrapper row5">
+        <div id="copyright" class="clear">
+
+        </div>
+    </div>
 </body>
+
 </html>
