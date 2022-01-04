@@ -27,7 +27,6 @@
 <div class="wrapper row3">
   <main id="container" class="clear"> 
     
-    
     <form class="news_form" action="post_news_action.php" method="post">
         <div class="flex-container">
             <div class=container>

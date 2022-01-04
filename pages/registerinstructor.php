@@ -1,7 +1,4 @@
-<?php include("connect.php");
-include "session_timeout.php";
-include("adminmenubar.php")  ?>
-
+<?php include("connect.php") ?>
 <!DOCTYPE html>
 
 <html>

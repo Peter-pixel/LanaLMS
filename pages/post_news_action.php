@@ -41,7 +41,7 @@
         </div>
 
         <div class="flex-item">
-            <a href="postnews.php" class="button">Post Again</a>
+            <a href="post_news.php" class="button">Post Again</a>
         </div>
 
     </div>
