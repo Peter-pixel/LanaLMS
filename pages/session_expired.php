@@ -16,7 +16,7 @@
             </p>
         </div>
         <div class="flex-item">
-            <a href="login.html" class="button">Go Home</a>
+            <a href="login.php" class="button">Go Home</a>
         </div>
     </div>
 
