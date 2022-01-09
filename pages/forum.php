@@ -1,7 +1,6 @@
 <?php 
-include "connect.php";
-include "session_timeout.php";
-include "learnermenubar.php"; 
+include("connect.php");
+include("learnermenubar.php"); 
 ?>
 <!DOCTYPE html>
 
@@ -26,13 +25,12 @@ include "learnermenubar.php";
 </div>
 
 <div class="wrapper row4">
-<footer id="footer" class="clear"> 
+  <footer id="footer" class="clear"> 
     
     <div class="one_half first">
       <h6 class="title">The future is now</h6>
-      <img class="imgl pad5 borderedbox" style="height: 100px; width: 100px;" src="../images/demo/cool2.png" alt="Student">
-      <p>A journey of  thousand miles starts with one step. <br>
-        Lana will revolutionalize e-learning and bring
+      <img class="imgl pad5 borderedbox" style="height: 100px; width: 100px;" src="../images/demo/gallery/student.png" alt="Student">
+      <p>A journey of  thousand miles starts with one step. Lana will revolutionalize e-learning and bring
         you the best in this field yet.
       </p>
       
@@ -51,24 +49,19 @@ include "learnermenubar.php";
       </ul>
     </div>
     <div class="one_quarter">
-      <h6 class="title">Find us on social media</h6>
-      <ul class="faico clear" style=" list-style-type:none;" >
-            <li><a class="faicon-facebook" href="https://www.facebook.com">Facebook</a></li>
-            <li><a class="faicon-pinterest" href="https://www.pinterest.com">Pinterest</i></a></li>
-            <li><a class="faicon-twitter" href="https://www.twitter.com">Twitter</i></a></li>
-            <li><a class="faicon-linkedin" href="https://www.linkedin.com">LinkedIn</i></a></li>
-            <li><a class="faicon-instagram" href="https://www.instagram.com">Instagram</i></a></li>
-          
-          </ul>
+      <h6 class="title">Subscribe to our newsletter</h6>
+      <p>Get updates on any changes that are made on this platform realtime.</p>
+      <form action="#" method="post">
+        <label for="nlt_email">Mail <span>*</span></label>
+        <input class="push15" type="text" name="nlt_email" id="nlt_email" value="" size="22">
+        <button class="badge bold uppercase" type="submit" value="Subscribe">Subscribe <i class="icon-chevron-right"></i></button>
+      </form>
     </div>
     
   </footer>
 </div>
-
 <div class="wrapper row5">
   <div id="copyright" class="clear"> 
-    
-    <p class="fl_left">Copyright &copy; 2021 - All Rights Reserved - <a href="#">LanaLMS</a></p>
     
   </div>
 </div>

@@ -123,11 +123,14 @@ span.psw {
           <input type="password" placeholder="Enter Employee Number" name="psw" required>
       
           <button type="submit"style=" background-color: #04aa36; color: white; padding: 14px 20px; margin: 8px 0; border: none; cursor: pointer; width: 100%;">Login</button>
-        
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
         </div>
       
         <div class="container" style="background-color:#f1f1f1">
           <button type="button" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
         </div>
       </form>
    
@@ -136,49 +139,43 @@ span.psw {
 </div>
 
 <div class="wrapper row4">
-<footer id="footer" class="clear"> 
-    
-    <div class="one_half first">
-      <h6 class="title">The future is now</h6>
-      <img class="imgl pad5 borderedbox" style="height: 100px; width: 100px;" src="../images/demo/cool2.png" alt="Student">
-      <p>A journey of  thousand miles starts with one step. <br>
-        Lana will revolutionalize e-learning and bring
-        you the best in this field yet.
-      </p>
+    <footer id="footer" class="clear"> 
       
-    </div>
-    <div class="one_quarter">
-      <h6 class="title">Contact us</h6>
-      <address class="push30">
-      Trend Ent<br>
-      250, 90119<br>
-      Matuu<br>
-           </address>
-      <ul class="nospace">
-        <li class="push10"><i class="icon-time"></i> Mon. - Fri. 9:00am - 7:00pm</li>
-        <li class="push10"><i class="icon-phone"></i> +254 797798449</li>
-        <li><i class="icon-envelope-alt"></i> lanalms.com</li>
-      </ul>
-    </div>
-    <div class="one_quarter">
-      <h6 class="title">Find us on social media</h6>
-      <ul class="faico clear" style=" list-style-type:none;" >
-            <li><a class="faicon-facebook" href="https://www.facebook.com">Facebook</a></li>
-            <li><a class="faicon-pinterest" href="https://www.pinterest.com">Pinterest</i></a></li>
-            <li><a class="faicon-twitter" href="https://www.twitter.com">Twitter</i></a></li>
-            <li><a class="faicon-linkedin" href="https://www.linkedin.com">LinkedIn</i></a></li>
-            <li><a class="faicon-instagram" href="https://www.instagram.com">Instagram</i></a></li>
-          
-          </ul>
-    </div>
-    
-  </footer>
-</div>
-
+      <div class="one_half first">
+        <h6 class="title">The future is now</h6>
+        <img class="imgl pad5 borderedbox" style="height: 100px; width: 100px;" src="../images/demo/gallery/student.png" alt="Student">
+        <p>A journey of  thousand miles starts with one step. Lana will revolutionalize e-learning and bring
+          you the best in this field yet.
+        </p>
+        
+      </div>
+      <div class="one_quarter">
+        <h6 class="title">Contact us</h6>
+        <address class="push30">
+        Trend Ent<br>
+        250, 90119<br>
+        Matuu<br>
+             </address>
+        <ul class="nospace">
+          <li class="push10"><i class="icon-time"></i> Mon. - Fri. 9:00am - 7:00pm</li>
+          <li class="push10"><i class="icon-phone"></i> +254 797798449</li>
+          <li><i class="icon-envelope-alt"></i> lanalms.com</li>
+        </ul>
+      </div>
+      <div class="one_quarter">
+        <h6 class="title">Subscribe to our newsletter</h6>
+        <p>Get updates on any changes that are made on this platform realtime.</p>
+        <form action="#" method="post">
+          <label for="nlt_email">Mail <span>*</span></label>
+          <input class="push15" type="text" name="nlt_email" id="nlt_email" value="" size="22">
+          <button class="badge bold uppercase" type="submit" value="Subscribe">Subscribe <i class="icon-chevron-right"></i></button>
+        </form>
+      </div>
+      
+    </footer>
+  </div>
 <div class="wrapper row5">
   <div id="copyright" class="clear"> 
-    
-    <p class="fl_left">Copyright &copy; 2021 - All Rights Reserved - <a href="#">LanaLMS</a></p>
     
   </div>
 </div>

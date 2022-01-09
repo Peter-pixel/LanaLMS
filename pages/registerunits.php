@@ -18,7 +18,6 @@
 <style>
     /* Bordered form */
 form {
-
 }
 
 /* Full-width inputs */
